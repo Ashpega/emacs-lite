@@ -547,7 +547,7 @@ module.exports = class EmacsLitePlugin extends Plugin {
 			key: "Ctrl-a",
 			preventDefault: true,
 			run: () => {
-			    this.app.commands.executeCommandById("obsidian-emacs-lite:cursor-line-start");
+			    this.app.commands.executeCommandById("emacs-lite:cursor-line-start");
 			    return true;
 			},
 		    },
@@ -555,7 +555,7 @@ module.exports = class EmacsLitePlugin extends Plugin {
 			key: "Ctrl-e",
 			preventDefault: true,
 			run: () => {
-			    this.app.commands.executeCommandById("obsidian-emacs-lite:cursor-line-end");
+			    this.app.commands.executeCommandById("emacs-lite:cursor-line-end");
 			    return true;
 			},
 		    },
@@ -563,7 +563,7 @@ module.exports = class EmacsLitePlugin extends Plugin {
 			key: "Ctrl-f",
 			preventDefault: true,
 			run: () => {
-			    this.app.commands.executeCommandById("obsidian-emacs-lite:cursor-forward");
+			    this.app.commands.executeCommandById("emacs-lite:cursor-forward");
 			    return true;
 			}
 		    },
@@ -571,7 +571,7 @@ module.exports = class EmacsLitePlugin extends Plugin {
 			key: "Ctrl-b",
 			preventDefault: true,
 			run: () => {
-			    this.app.commands.executeCommandById("obsidian-emacs-lite:cursor-backward");
+			    this.app.commands.executeCommandById("emacs-lite:cursor-backward");
 			    return true;
 			},
 		    },
@@ -579,7 +579,7 @@ module.exports = class EmacsLitePlugin extends Plugin {
 			key: "Ctrl-p",
 			preventDefault: true,
 			run: () => {
-			    this.app.commands.executeCommandById("obsidian-emacs-lite:move-visual-line-up");
+			    this.app.commands.executeCommandById("emacs-lite:move-visual-line-up");
 			    return true;
 			},
 		    },
@@ -587,7 +587,7 @@ module.exports = class EmacsLitePlugin extends Plugin {
 			key: "Ctrl-n",
 			preventDefault: true,
 			run: () => {
-			    this.app.commands.executeCommandById("obsidian-emacs-lite:move-visual-line-down");
+			    this.app.commands.executeCommandById("emacs-lite:move-visual-line-down");
 			    return true;
 			},
 		    },
@@ -595,7 +595,7 @@ module.exports = class EmacsLitePlugin extends Plugin {
 			key: "Ctrl-d",
 			preventDefault: true,
 			run: () => {
-			    this.app.commands.executeCommandById("obsidian-emacs-lite:delete-char-forward");
+			    this.app.commands.executeCommandById("emacs-lite:delete-char-forward");
 			    return true;
 			},
 		    },
@@ -604,7 +604,7 @@ module.exports = class EmacsLitePlugin extends Plugin {
 			run: () => {
 			    if (!this.settings.enableExtendedDelete) return false;
 
-			    this.app.commands.executeCommandById("obsidian-emacs-lite:delete-char-backward");
+			    this.app.commands.executeCommandById("emacs-lite:delete-char-backward");
 			    return true;
 			},
 		    },
@@ -612,7 +612,7 @@ module.exports = class EmacsLitePlugin extends Plugin {
 			key: "Alt-f",
 			preventDefault: true,
 			run: () => {
-			    this.app.commands.executeCommandById("obsidian-emacs-lite:cursor-chunk-forward");
+			    this.app.commands.executeCommandById("emacs-lite:cursor-chunk-forward");
 			    return true;
 			},
 		    },
@@ -620,7 +620,7 @@ module.exports = class EmacsLitePlugin extends Plugin {
 			key: "Alt-b",
 			preventDefault: true,
 			run: () => {
-			    this.app.commands.executeCommandById("obsidian-emacs-lite:cursor-chunk-backward");
+			    this.app.commands.executeCommandById("emacs-lite:cursor-chunk-backward");
 			    return true;
 			},
 		    },
@@ -628,7 +628,7 @@ module.exports = class EmacsLitePlugin extends Plugin {
 			key: "Alt-d",
 			preventDefault: true,
 			run: () => {
-			    this.app.commands.executeCommandById("obsidian-emacs-lite:delete-chunk-forward");
+			    this.app.commands.executeCommandById("emacs-lite:delete-chunk-forward");
 			    return true;
 			},
 		    },
@@ -637,7 +637,7 @@ module.exports = class EmacsLitePlugin extends Plugin {
 			run: () => {
 			    if (!this.settings.enableExtendedDelete) return false;
 
-			    this.app.commands.executeCommandById("obsidian-emacs-lite:delete-chunk-backward");
+			    this.app.commands.executeCommandById("emacs-lite:delete-chunk-backward");
 			    return true;
 			},
 		    },
@@ -645,7 +645,7 @@ module.exports = class EmacsLitePlugin extends Plugin {
 			key: "Alt-w",
 			preventDefault: true,
 			run: () => {
-			    this.app.commands.executeCommandById("obsidian-emacs-lite:copy-region");
+			    this.app.commands.executeCommandById("emacs-lite:copy-region");
 			    return true;
 			}
 		    },
@@ -653,7 +653,7 @@ module.exports = class EmacsLitePlugin extends Plugin {
 			key: "Ctrl-w",
 			preventDefault: true,
 			run: () => {
-			    this.app.commands.executeCommandById("obsidian-emacs-lite:kill-region");
+			    this.app.commands.executeCommandById("emacs-lite:kill-region");
 			    return true;
 			}
 		    },
@@ -662,7 +662,7 @@ module.exports = class EmacsLitePlugin extends Plugin {
 			run: () => {
 			    if (!this.settings.enableSystemOverride) return false;
 
-			    this.app.commands.executeCommandById("obsidian-emacs-lite:copy-region-ctrl-c");
+			    this.app.commands.executeCommandById("emacs-lite:copy-region-ctrl-c");
 			    return true;
 			},
 		    },
@@ -671,7 +671,7 @@ module.exports = class EmacsLitePlugin extends Plugin {
 			run: () => {
 			    if (!this.settings.enableSystemOverride) return false;
 
-			    this.app.commands.executeCommandById("obsidian-emacs-lite:cut-region-ctrl-x");
+			    this.app.commands.executeCommandById("emacs-lite:cut-region-ctrl-x");
 			    return true;
 			},
 		    },
@@ -679,7 +679,7 @@ module.exports = class EmacsLitePlugin extends Plugin {
 			key: "Ctrl-k",
 			preventDefault: true,
 			run: () => {
-			    this.app.commands.executeCommandById("obsidian-emacs-lite:kill-to-end-of-line");
+			    this.app.commands.executeCommandById("emacs-lite:kill-to-end-of-line");
 			    return true;
 			}
 		    },
@@ -689,7 +689,7 @@ module.exports = class EmacsLitePlugin extends Plugin {
 			run: () => {
 			    if (!this.settings.enableExtendedSelection) return false;
 
-			    this.app.commands.executeCommandById("obsidian-emacs-lite:select-to-end-of-line");
+			    this.app.commands.executeCommandById("emacs-lite:select-to-end-of-line");
 			    return true;
 			},
 		    },
@@ -697,7 +697,7 @@ module.exports = class EmacsLitePlugin extends Plugin {
 			key: "Ctrl-y",
 			preventDefault: true,
 			run: () => {
-			    this.app.commands.executeCommandById("obsidian-emacs-lite:yank");
+			    this.app.commands.executeCommandById("emacs-lite:yank");
 			    return true;
 			}
 		    },

@@ -1,6 +1,6 @@
 {
-    "id": "obsidian-emacs-lite",
-    "name": "Emacs Lite",
+    "id": "emacs-lite",
+    "name": "Emacs Keybindings Lite",
     "version": "1.0.0",
     "minAppVersion": "1.5.0",
     "author": "Ashpega",
