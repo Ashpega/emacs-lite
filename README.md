@@ -148,6 +148,12 @@ These behaviors remain the same even when the mark is active.
 
 ---
 
+## Privacy
+
+This plugin runs **entirely offline**. It does **not** collect, transmit, or store any data externally — and never will.
+
+---
+
 ## Future Work
 
 - Enhanced undo behavior
