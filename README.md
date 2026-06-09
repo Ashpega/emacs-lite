@@ -1,4 +1,4 @@
-# Emacs Lite (for Obsidian)
+# Emacs Keybindings Lite
 
 Emacs-like keybindings for Obsidian, designed for Windows users.
 
@@ -131,7 +131,7 @@ These behaviors remain the same even when the mark is active.
 
 1. Copy this plugin into your vault:
 
-   .obsidian/plugins/obsidian-emacs-lite/
+   .obsidian/plugins/emacs-lite/
 
 2. Reload Obsidian
 3. Enable the plugin in Settings
